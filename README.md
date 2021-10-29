@@ -52,8 +52,7 @@ Puedes hacer un PULL-REQUEST y estaré encantado de aceptartelo siempre y cuando
 
 Recuerda que soy un maniático del orden y la jerarquía, asegurate que tus funciones están optimizadas, comentadas y tabuladas correctamente, si no tendrás que corregirlo.
 
-Divierte escribiendo código en JS.
-Pasa un feliz Halloween con tus seres queridos :) 
+Divierte escribiendo código en JS, pero sobre todo, pasa un feliz Halloween con tus seres queridos :) 
 
 ![42759](https://user-images.githubusercontent.com/84098854/139463444-6f7b5508-5ad5-4b23-bc26-aa363edbf8d7.jpg)
 
