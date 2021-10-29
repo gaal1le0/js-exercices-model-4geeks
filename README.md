@@ -27,7 +27,7 @@
 
 ### Ejercicios
 
-*** PISTA: Antes de usar los arrays deberás limpiarlo ***
+**PISTA: Antes de usar los arrays deberás limpiarlo**
 
 1. Crea una función que ordene de menor a mayor el array sequence.
 2. Crea una funcion que ordene de mayor a menor el array sequence.
@@ -45,7 +45,7 @@ Si el número es válido, se calcula la letra que le corresponde según el méto
 
 ### Contribuciones
 
-Si ves algun fallo en estas instrucciones recuerda que soy *** humano *** 
+Si ves algun fallo en estas instrucciones recuerda que soy **HUMANO**
 Puedes hacer un PULL-REQUEST y estaré encantado de aceptartelo siempre y cuando contenga información relevante. 
 
 ### Ultimas cosas
