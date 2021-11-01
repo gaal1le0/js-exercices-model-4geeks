@@ -57,6 +57,17 @@ function highestToLowest(i,j,arr){
     }
 }
 
-console.log(sortArray(sequence,"<"));
+function aritMedia(myArray){
+    let arr = cleanArray(myArray);
+    let sum = 0;
+    
+    for(let i in arr){
+        sum += arr[i];
+    }
+    return sum/(arr.length);
+}
+
+//console.log(sortArray(sequence,"<"));
+//console.log(aritMedia(sequence));
 
 
