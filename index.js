@@ -1,7 +1,6 @@
 // declaración de datos iniciales
 let undefined;
 const sequence = [10, 4, 8, 27.4, 500, null, undefined, 100, 25, 40, 31, 20, 17, 1890, 13, 42];
-const letrasDNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
 
 function cleanArray(myArray){
@@ -71,3 +70,22 @@ function aritMedia(myArray){
 //console.log(aritMedia(sequence));
 
 
+const letrasDNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+
+function assignLetter(myArray,dni,letter){
+    if(isNumberOk(dni)){
+        let rest = dni%23;
+        if (letter == myArray[rest]){
+            return "El número y la letra del DNI indicados son correctos.";
+        }
+        else return "La letra indicada es incorrecta.";
+    }
+    else return "El numero proporcionado no es válido.";
+}
+
+function isNumberOk(num){
+    if (num>0 && num<99999999) return true;
+    else return false;
+}
+
+//console.log(assignLetter(letrasDNI,55123456,'X'));
