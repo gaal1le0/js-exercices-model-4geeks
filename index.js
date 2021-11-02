@@ -34,20 +34,56 @@ function ascendingOrder(left, right){
     }
 
     // Incluye el/los elementos que hayan quedado "sueltos" en uno de los lados y devuelve el array ordenado.
-    ordered.push(...left, ...right)
+    ordered.push(...left, ...right);
+    return ordered;
+}
+
+// Ordena dos arrays de menor a mayor
+function descendingOrder(left, right){
+    let ordered = [];
+
+    // Mientras los dos lados de la comparación tengan valores:
+    while (left.length > 0 && right.length > 0){
+        //El elemento menor es incluido en primer lugar en el array y eliminado de su lado.
+        if (left[0] > right[0]){
+            ordered.push(left[0]);
+            left.shift();
+        } else {
+            ordered.push(right[0]);
+            right.shift();
+        }
+    }
+
+    // Incluye el/los elementos que hayan quedado "sueltos" en uno de los lados y devuelve el array ordenado.
+    ordered.push(...left, ...right);
     return ordered;
 }
 
 // Parte el array dado en mitades recursivamente hasta que queda un elemento en cada mitad y llama a otra función que ordena los elementos resultantes.
-function orderArray(array){
-    // Si el array solo tiene un elemento, devuelve ese elemento. Este es el CASO BASE.
-    if (array.length < 2){
-        return array[0];
+function orderArray(array, order){
+    // Aplica el filtro para retirara los elementos que no son números
+    let filtered = filter(array)
+
+    // Selecciona la función de ordenación adecuada según lo elegido al ejecutar la función:
+    if (order === "ascending"){
+        sorting = ascendingOrder;
+    } else if (order === "descending"){
+        sorting = descendingOrder;
     }
 
-    let half = Math.floor(array.length / 2);
-    let left = array.slice(0, half);
-    let right = array.slice(half, array.length - 1);
+    // Si el array solo tiene un elemento, devuelve ese elemento. Este es el CASO BASE.
+    if (filtered.length < 2){
+        return filtered;
+    }
+
+    // Halla la mitad del array y lo divide en dos partes
+    let half = Math.floor(filtered.length / 2);
+    let left = filtered.slice(0, half);
+    let right = filtered.slice(half, filtered.length);
+
+    // La función se llama recursivamente a sí misma para reducir cada mitad a su mitad una y otra vez hasta que una de las partes se reduce a un solo elemento.
+    // Una vez reducida a un elemento cada parte, la función de ordenación seleccionada
+    return sorting(orderArray(left), orderArray(right));
 }
 
 // Calcula la media aritmética de los valores numéricos del array dado.
