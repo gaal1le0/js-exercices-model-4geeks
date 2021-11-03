@@ -95,7 +95,7 @@ function arithmeticMean(array){
         average += value;
     }
 
-    return average/filtered.length;
+    return Math.floor(average/filtered.length);
 }
 
 // Valida que el número introducido se encuentre entre los parámetros correctos (entre 0 y 99999999)
