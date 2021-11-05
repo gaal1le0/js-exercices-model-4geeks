@@ -1,18 +1,10 @@
-# Ejercicios propuestos para el 29/10/2021
-## Preparaós para sufrir un poquito ;) 
+# <img src="https://github.com/jesus-cano-ortega/js-introduction-exercises/blob/main/assets/resources/img/face.png" width="45" alt="Personal Logo"> Ejercicios JavaScript (I)
 
-### ¿Cómo comenzar el proyecto?
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/html-hello.git)
 
-1. Crea un nuevo WorkSpace en GITPOD
-2. Haz un fork del proyecto.
-3. Clona el fork en tu GITPOD `git clone <url>`
-4. Comienza a trabajar :) 
+JavaScript es el lenguaje de programación encargado de dotar de mayor interactividad y dinamismo a las páginas web. Por tanto, se le reconoce como uno de los tres lenguajes nativos de la web junto a HTML (contenido y su estructura) y a CSS (diseño del contenido y su estructura). 
 
-### ¿Cómo ejecutar el proyecto?
-
-1. Situate en el directorio del proyecto.
-2. Ejecuta `node index.js`
-3. Verás los resultados por terminal.
+Con este lenguaje de programación del lado del cliente (no en el servidor) podemos crear efectos y animaciones sin ninguna interacción, o respondiendo a eventos causados por el propio usuario tales como botones pulsados y modificaciones del DOM (document object model), donde su principal función es ayudar a crear páginas webs dinámicas.
 
 ### Instrucciones 
 
@@ -37,22 +29,16 @@ Por tanto si el resto de la división es 0, la letra del DNI es la T y si el res
 En primer lugar se debe comprobar si el número es menor que 0 o mayor que 99999999. Si ese es el caso, se muestra un mensaje al usuario indicando que el número proporcionado no es válido y el programa no muestra más mensajes.
 Si el número es válido, se calcula la letra que le corresponde según el método explicado anteriormente. Una vez calculada la letra, se debe comparar con la letra indicada por el usuario. Si no coinciden, se muestra un mensaje al usuario diciéndole que la letra que ha indicado no es correcta. En otro caso, se muestra un mensaje indicando que el número y la letra de DNI son correctos.
 
-### ¿Cómo entregar el proyecto?
+### ¿Cómo ejecutar el proyecto?
 
-1. Finaliza todos los ejercicios propuestos y asegurate de que están comentados :) 
-2. Escribeme por Slack @Manu y enviame el Link de tu repo para poder comprobar los ejercicios.
-3. Espera mi respuesta o tus amigos ISSUES por GITHUB
+Cree un archivo `index.html` con la [estructura HTML básica](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) y visualizelo en vivo ejecutando una web -servidor usando el siguiente comando:
 
-### Contribuciones
+```sh
+$ pip3 install flask && python3 server.py
+```
 
-Si ves algun fallo en estas instrucciones recuerda que soy **HUMANO**
-Puedes hacer un PULL-REQUEST y estaré encantado de aceptartelo siempre y cuando contenga información relevante. 
+Para ejecutar el código javascript por terminal, utilizar el siguiente comando: 
 
-### Ultimas cosas
-
-Recuerda que soy un maniático del orden y la jerarquía, asegurate que tus funciones están optimizadas, comentadas y tabuladas correctamente, si no tendrás que corregirlo.
-
-Divierte escribiendo código en JS, pero sobre todo, pasa un feliz Halloween con tus seres queridos :) 
-
-![42759](https://user-images.githubusercontent.com/84098854/139463444-6f7b5508-5ad5-4b23-bc26-aa363edbf8d7.jpg)
-
+```sh
+node nombre_archivo.js
+```
