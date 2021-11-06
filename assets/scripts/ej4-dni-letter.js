@@ -1,14 +1,14 @@
 // El cálculo de la letra del Documento Nacional de Identidad (DNI).
 
 //DNI de usuarios de ejemplo
-let userDNI1 = 48108444;
-let userDNI2 = 47210834;
-let userDNI3 = 37850689000;
+const userDNI1 = 48108444;
+const userDNI2 = 47210834;
+const userDNI3 = 37850689000;
 
 //Letras DNI usuarios de ejemplo
-let userLetter1 = 'B';
-let userLetter2 = 'A';
-let userLetter3 = 'C';
+const userLetter1 = 'B';
+const userLetter2 = 'A';
+const userLetter3 = 'C';
 
 const letrasDNI = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
