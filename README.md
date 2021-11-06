@@ -31,12 +31,6 @@ Si el número es válido, se calcula la letra que le corresponde según el méto
 
 ### ¿Cómo ejecutar el proyecto?
 
-Cree un archivo `index.html` con la [estructura HTML básica](http://content.breatheco.de/lesson/what-is-html-learn-html#page-structure) y visualizelo en vivo ejecutando una web -servidor usando el siguiente comando:
-
-```sh
-$ pip3 install flask && python3 server.py
-```
-
 Para ejecutar el código javascript por terminal, utilizar el siguiente comando: 
 
 ```sh
